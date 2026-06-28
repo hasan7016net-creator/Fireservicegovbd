@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>অনাপত্তি সনদের জন্য আবেদন</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Download Button Styling */
+        .download-btn-container {
+            max-width: 900px;
+            width: 100%;
+            text-align: right;
+            margin-bottom: 15px;
+        }
+
+        .download-btn {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+        }
+
+        .download-btn:hover {
+            background-color: #27ae60;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            padding: 15px;
+        }
+
+        /* Header Styles */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+        .header img {
+            width: 80px;
+            height: auto;
+            margin-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            margin-bottom: 4px;
+        }
+
+        .header h2 {
+            font-size: 1.1rem;
+            color: #555;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .header h3 {
+            font-size: 0.95rem;
+            color: #777;
+            font-weight: normal;
+        }
+
+        /* Error/Status Banner */
+        .status-banner {
+            background-color: #f2f2f2;
+            border: 1px solid #ddd;
+            text-align: center;
+            padding: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        /* Table/Grid System for Responsiveness */
+        .info-table {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            border-left: 1px solid #95a5a6;
+            border-top: 1px solid #95a5a6;
+        }
+
+        .label {
+            background-color: #7f8c8d;
+            color: #ffffff;
+            padding: 12px;
+            font-weight: bold;
+            font-size: 0.95rem;
+            border-right: 1px solid #95a5a6;
+            border-bottom: 1px solid #95a5a6;
+            display: flex;
+            align-items: center;
+        }
+
+        .value {
+            padding: 12px;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            border-right: 1px solid #95a5a6;
+            border-bottom: 1px solid #95a5a6;
+            background-color: #fff;
+        }
+
+        .value p {
+            margin-bottom: 12px;
+        }
+        .value p:last-child {
+            margin-bottom: 0;
+        }
+
+        .address-block {
+            margin-bottom: 5px;
+        }
+
+        /* Footer Styles */
+        .footer {
+            margin-top: 25px;
+            padding-top: 10px;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        /* Responsive Design for Mobile Devices */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .info-table {
+                grid-template-columns: 1fr;
+            }
+
+            .label {
+                background-color: #34495e;
+                border-right: 1px solid #95a5a6;
+            }
+        }
+
+        /* Print Rules - Hides the button during download/print */
+        @media print {
+            body {
+                background-color: #fff;
+                padding: 0;
+            }
+            .download-btn-container {
+                display: none;
+            }
+            .container {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="download-btn-container">
+    <button class="download-btn" onclick="window.print()">ডাউনলোড / প্রিন্ট করুন</button>
+</div>
+
+<div class="container">
+    
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Government_Seal_of_Bangladesh.svg" alt="BD Logo">
+        <h1>গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</h1>
+        <h2>ফায়ার সার্ভিস ও সিভিল ডিফেন্স অধিদপ্তর</h2>
+        <h3>ওয়ারহাউজ ও ফায়ার প্রিভেনশন শাখা</h3>
+        <h3 style="margin-top: 5px; font-weight: bold;">অনাপত্তি সনদের জন্য আবেদন</h3>
+    </div>
+
+    <div class="status-banner">
+        Keyword not found.
+    </div>
+
+    <div class="info-table">
+        
+        <div class="label">স্মারক নং</div>
+        <div class="value">৫৮.০৩.০০০০.০০৭.০৪.০০১.২৬(সভা-১০)-২১৮৯</div>
+
+        <div class="label">সার্টিফিকেট ইস্যুর তারিখ এবং সময়</div>
+        <div class="value">18/02/2026 15:58:38</div>
+
+        <div class="label">অনুমোদন কারীর নাম</div>
+        <div class="value">লেঃ কর্নেল মোহাম্মদ হাসান পিএসসি</div>
+
+        <div class="label">অনুমোদন কারীর পদবী</div>
+        <div class="value">পরিচালক (অপা: ও মেইন:)</div>
+
+        <div class="label">অনাপত্তি সনদের তথ্য</div>
+        <div class="value">
+            <p>উপর্যুক্ত বিষয়ের আলোকে জানানো যাচ্ছে যে, দাগ নং-সিএস এবং এসএ -৩৮০, আরএস-১৫৭০, খতিয়ান নং- সিএস-৭৮, ২/২৩, এসএ-২১, ২০১, ২৪, আরএস-১২০, বিআরএস- (ডিপি)-৩৩৬১, বিআরএস-১৬০০১,১৬০০২,১৬০০০,১৬০২৪, খতিয়ান নং-সিএস-৭৮, ২/২৩, এসএ-২১,২০১,২৪, আরএস-১২০, বিআরএস-(ডিপি)-৩৩৬১, মৌজা- বাইপাইল, আশুলিয়া থানা/উপজেলা- সাভার, জেলা- ঢাকাস্থ ঠিকানায় ১০ তলা (A3) শ্রেণীর ভবন নির্মাণ করার জন্য আবেদন পত্রের সাথে প্রদত্ত Fire Fighting Floor Plan টি কমিটি কর্তৃক যাচাই বাছাই ও পরীক্ষা করা হয়। উক্ত Fire Fighting Floor Plan অগ্নি প্রতিরোধ ও নির্বাপণ আইন- ২০০৩, বাংলাদেশ ন্যাশনাল বিল্ডিং কোড, অত্র অধিদপ্তরের চেকলিস্ট ও পরামর্শ অনুযায়ী প্রস্তুত করায় এবং কমিটি কর্তৃক যাচাই বাছাই ও পরীক্ষান্তে Fire Fighting Floor Plan টি সঠিক বলে প্রতীয়মান হওয়ায় তা অনুমোদন প্রদান করা হল।</p>
+            
+            <p>ভবন নির্মাণ শেষে সকল অগ্নি নির্বাপণী সরঞ্জামাদি স্থাপন করা হয়েছে/কার্যকর রয়েছে মর্মে <strong>কার্যকারিতা সনদ</strong> প্রাপ্তির নিমিত্তে সমাপনী প্রতিবেদন অধিদপ্তরে দাখিল করার জন্য অনুরোধ করা হল। উল্লেখ্য যে, ভবনে কমপক্ষে ২ টি সিঁড়ি, ফায়ার অ্যালার্ম, ফায়ার পাম্প ও হোজরীল স্থাপন নিশ্চিত করে ভবন নির্মাণ করতে হবে। এই অনাপত্তি ছাড়পত্রটি শুধুমাত্র ভবনের অগ্নি নির্বাপণ বিষয় সম্পর্কিত।</p>
+            
+            <p>অগ্নি-নিরাপত্তা পরিকল্পনা অনুমোদনের পাশাপাশি উল্লেখিত ভবনের অনুকূলে Electrical Sub-Station-এর সাময়িক অনাপত্তি ছাড়পত্র প্রদান করা হলো।</p>
+        </div>
+
+        <div class="label">আবেদনকারীর নাম</div>
+        <div class="value">আবুল কালাম আজাদ</div>
+
+        <div class="label">ভবন/প্রতিষ্ঠানের মালিকের নাম</div>
+        <div class="value">মোঃ আলম ভূঁইয়া গং</div>
+
+        <div class="label">ভবন/প্রতিষ্ঠানের মালিকের ঠিকানা</div>
+        <div class="value">
+            <div class="address-block"><strong>ঠিকানা:</strong> পলাশ বাড়ী, সাভার ক্যান্টনমেন্ট, আশুলিয়া, সাভার, ঢাকা</div>
+            <div class="address-block"><strong>উপজেলা/থানা:</strong> সাভার</div>
+            <div class="address-block"><strong>জেলা:</strong> ঢাকা</div>
+            <div class="address-block"><strong>বিভাগ:</strong> ঢাকা</div>
+        </div>
+
+        <div class="label">ভবনের/প্রতিষ্ঠানের ঠিকানা</div>
+        <div class="value"><strong>ঠিকানা:</strong> মৌজা- বাইপাইল, জেএল নং- ৪৮, খতিয়ান নং- ৭৫৮১, দাগ নং- ১৬০০১,</div>
+
+    </div>
+
+    <div class="footer">
+        <p>পরিকল্পনা ও বাস্তবায়নে: বাংলাদেশ ফায়ার সার্ভিস ও সিভিল ডিফেন্স অধিদপ্তর</p>
+    </div>
+
+</div>
+
+</body>
+</html>
